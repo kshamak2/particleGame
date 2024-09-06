@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="'en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Particles (Game)</title>  
+        <link rel="stylesheet" href="./style.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button id="homeButton" onClick="switchPage('#home');" class="active material-icons">house</button>
+                <button id="howButton" onClick="switchPage('#how');">How To Play</button>
+                <button id="scoresButton" onClick="switchPage('#scores');">High Scores</button>
+                <button id="gameButton" onClick="switchPage('#game');">Play</button>
+            </nav>
+        </header> <!--Navigation-->
+        <div id="content">
+            <div id="home" class="page"> <!--Home Page-->
+                <div class="wolves">
+                    <div class="wolf top-left">
+                        <div class="wolf-ear-left"></div>
+                        <div class="wolf-ear-right"></div>
+                        <div class="wolf-head"></div>
+                        <div class="wolf-eye-left"></div>
+                        <div class="wolf-eye-right"></div>
+                        <div class="wolf-eyeball-left"></div>
+                        <div class="wolf-eyeball-right"></div>
+                        <div class="wolf-nose"></div>
+                    </div>
+                    <div class="wolf top-right">
+                        <div class="wolf-ear-left"></div>
+                        <div class="wolf-ear-right"></div>
+                        <div class="wolf-head"></div>
+                        <div class="wolf-eye-left"></div>
+                        <div class="wolf-eye-right"></div>
+                        <div class="wolf-eyeball-left"></div>
+                        <div class="wolf-eyeball-right"></div>
+                        <div class="wolf-nose"></div>
+                    </div>
+                </div> <!--Wolves-->
+            
+                <h1 id="header">Particles</h1>
+                <div id="box">
+                    <p id="creator">A game by Kshama Kirti Ankita</p>
+                    <p id="welcome">Welcome to Particles, a game of speed and accuracy.</p>
+                    <div id="circles">
+                        <button id="homeHowButton" class="home-buttons" onClick="switchPage('#how');">How</button>
+                        <button id="homePlayButton" class="home-buttons" onClick="switchPage('#game');">Play</button>
+                    </div>
+                </div>
+                
+            </div> <!--home-->
+            <div id="how" class="page"> <!--How page-->
+                <h1>How</h1>
+                <article>
+                    <p class="line line-1">You need to hover over the particles as they move up the screen.</p>
+                    <p class="line line-2">When a particle reaches full size you need to click on it.</p>
+                    <p class="line line-3">Clicking on a particle will award you one point and add one second to your time.</p>
+                    <p class="line line-4">There are special gold particles that award you even more points/time.</p>
+                    <p class="line line-5">Click on the Play button to get started.</p>
+                    <div class="particle-gold"></div>
+                </article>
+                <div class="wolves">
+                    <div class="wolf top-left">
+                        <div class="wolf-ear-left"></div>
+                        <div class="wolf-ear-right"></div>
+                        <div class="wolf-head"></div>
+                        <div class="wolf-eye-left"></div>
+                        <div class="wolf-eye-right"></div>
+                        <div class="wolf-eyeball-left"></div>
+                        <div class="wolf-eyeball-right"></div>
+                        <div class="wolf-nose"></div>
+                    </div>
+                    <div class="wolf top-right">
+                        <div class="wolf-ear-left"></div>
+                        <div class="wolf-ear-right"></div>
+                        <div class="wolf-head"></div>
+                        <div class="wolf-eye-left"></div>
+                        <div class="wolf-eye-right"></div>
+                        <div class="wolf-eyeball-left"></div>
+                        <div class="wolf-eyeball-right"></div>
+                        <div class="wolf-nose"></div>
+                    </div>
+                </div> <!--Wolves-->
+                
+            </div> <!--how-->
+            <div id="scores" class="page"> <!--Scores page-->
+                <h1>Scores</h1>
+                <div id="scoresTable"></div>
+                <div class="wolves">
+                    <div class="wolf top-left">
+                        <div class="wolf-ear-left"></div>
+                        <div class="wolf-ear-right"></div>
+                        <div class="wolf-head"></div>
+                        <div class="wolf-eye-left"></div>
+                        <div class="wolf-eye-right"></div>
+                        <div class="wolf-eyeball-left"></div>
+                        <div class="wolf-eyeball-right"></div>
+                        <div class="wolf-nose"></div>
+                    </div>
+                    <div class="wolf top-right">
+                        <div class="wolf-ear-left"></div>
+                        <div class="wolf-ear-right"></div>
+                        <div class="wolf-head"></div>
+                        <div class="wolf-eye-left"></div>
+                        <div class="wolf-eye-right"></div>
+                        <div class="wolf-eyeball-left"></div>
+                        <div class="wolf-eyeball-right"></div>
+                        <div class="wolf-nose"></div>
+                    </div>
+                </div> <!--Wolves-->
+                
+            </div> <!--scores-->
+            <div id="game" class="page"> <!--game page-->
+                <div id="particle-box"></div>
+                <div id="gameComponents">
+                    <div id="gameTimer"></div>
+                    <div class="game-score">0</div>
+                </div>
+                <div id="gameOver">
+                    <div id="gameScore" class="game-score">0</div>
+                    <div id="gameScoreBest">0</div>
+                    <button id="gameReplayButton" onclick="startGame();">Replay</button>
+                </div>
+                <button id="gameStartButton" onclick="startGame();">Start</button>
+            </div> <!--Game-->
+        </div> <!--Content-->
+    
+        <!--jQuery library-->
+        <script src="./script.js"></script>
+    </body>
+</html>
